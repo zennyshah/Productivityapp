@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: cadetblue !important;
+}
+
+h1 {
+    font-size: 50px !important;
+    color: #ffffff !important;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+h3 {
+    color: #ffffff !important;
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    color: #ffffff !important;
+    font-size: 16px;
+    text-align: center;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.time-select,
+.sound-picker {
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.time-select .button,
+.sound-picker button {
+    color: white;
+    width: 30%;
+    height: 10%;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: all 0.5s ease;
+}
+
+.sound-picker button {
+    border: none;
+    height: 120px;
+    width: 120px;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.sound-picker button:nth-child(1) {
+    background: #71b9ed;
+}
+
+.sound-picker button:nth-child(2) {
+    background: #e5ed71;
+}
+
+.sound-picker button img {
+    height: 100%;
+}
+
+.time-select button:hover {
+    background: white;
+    color: black;
+}
+
+.player-container {
+    position: relative;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.player-container svg {
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+}
+
+.player-container svg circle {
+    transition: all 0.2s ease-in-out;
+}
+
+.time-display {
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    bottom: 10%;
+}
+
+video {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: -10;
+}
+
+
+/* 
+================== */
+
+.player-container .play {
+    position: fixed;
+}
+
+.player-container .replay {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 85%;
+    left: 49%;
+}
+
+.time-select .btn {
+    background: none;
+}
+
+.time-select .back-button {
+    background-color: rgb(238, 113, 124);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 15px;
+}
+
+.time-select .back-button:hover {
+    background-color: rgb(235, 39, 56);
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* header {
+    background-color: #111111;
+    color: white;
+    display: flex;
+}
+
+header nav {
+    padding-top: 50px;
+    padding-left: 30%;
+    text-align: center;
+    font-size: 20px;
+}
+
+header a {
+    padding-left: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer {
+    background-color: #111111;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+    margin: 30px;
+} */
+
+
+/* Carousel effect */
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+    width: 40%;
+    height: 30%;
+    margin: auto;
+}
+
+.container {
+    margin: 70px;
+}
+
+div .carousel {
+    border: 3px solid white;
+    box-shadow: 2px 1px 20px white;
+    border-radius: 10px;
+}
